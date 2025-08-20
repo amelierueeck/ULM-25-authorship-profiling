@@ -17,9 +17,9 @@ def get_data_splits(to_csv=False, columns=["text", "age", "gender"]):
         data_val = data_val.select_columns(columns)
         data_test = data_test.select_columns(columns)
     if to_csv:
-        data_train.to_pandas().to_csv("data_train.csv", index=False)
-        data_val.to_pandas().to_csv("data_val.csv", index=False)
-        data_test.to_pandas().to_csv("data_test.csv", index=False)
+        data_train.to_pandas().to_csv("data/data_train.csv", index=False)
+        data_val.to_pandas().to_csv("data/data_val.csv", index=False)
+        data_test.to_pandas().to_csv("data/data_test.csv", index=False)
     return data_train, data_val, data_test
 
 data_train, data_val, data_test = get_data_splits(to_csv=True)
