@@ -4,6 +4,7 @@
 
 **Task Description + Example of Task:**
 Our project wants to look at the task of authorship profiling and figure out if demographic information like age and/or gender is encoded in which layers of pre-trained LLMs. We will first probe the different layers of frozen BERT (RoBERTa?) for age and gender to see if demographic information is already encoded in a pretrained model. We then want to fine-tune the LLM (BERT) on the Blog Authorship Corpus using LoRA with a combined loss (i.e., loss_age + loss_gender). We then probe the intermediate layers again to see if the fine-tuning changed where in the model age and/or gender are encoded. 
+
 Example: compare layer 3 from pretrained BERT to layer 3 from fine-tuned BERT
 1. get layer 3 activations from pretrained BERT
 2. get layer 3 activations from fine-tuned BERT
