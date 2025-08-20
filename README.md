@@ -36,8 +36,9 @@ We will use the Blog Authorship Corpus, which was released by Bar-Ilan Universit
         2.1.3. save these activations \
     2.2. probe each layer (train classifier) \
         2.2.1. train logistic regression model to predict age or gender \
-        2.2.2. 
- 3. Fine-tune BERT with LoRA \
+        2.2.2. evaluate probe accuracy on test set -> how well does each layer perform? \
+        2.2.3. plot accuracy vs. layer 
+ 4. Fine-tune BERT with LoRA \
     3.1 Load LoraConfig, get_peft_model, and PeftModel from the PEFT library \
     3.2 Initialize the PeftModel using bert-base-uncased as the foundation model \
     3.3 Use the transformers Trainer and TrainingArguments to initiate the training loop, using the train and val sets \
