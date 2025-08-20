@@ -20,20 +20,20 @@ We will use the Blog Authorship Corpus, which was released by Bar-Ilan Universit
 
 
  **Project Plan:**
- 0. Prepare data splits: 80% / 10% / 10% and save in files
-    0.1 split by author_id?
-    0.2 ensure class balance for gender & age groups
- 1. Preprocessing & tokenization
-    1.1. tokenizer: bert-base-uncased
-    1.2. set a max_length -> 256? 512?
-    1.3 store tokenized datasets
- 3. Probing pre-trained BERT:
-    2.1. Probe each layer of pre-trained BERT for age / gender
-        2.1.1. feed blogposts through the model and get hidden activations          per layers -> pool the hidden states to get one vector per input by         taking the [CLS] token
-        2.1.2 we need 13 hidden activations per input (embeddings + 12              layers)
-        2.1.3. save these activations
-    2.2. probe each layer (train classifier)
-        2.2.1. train logistic regression model to predict age or gender
+ 0. Prepare data splits: 80% / 10% / 10% and save in files \
+    0.1 split by author_id? \
+    0.2 ensure class balance for gender & age groups \
+ 1. Preprocessing & tokenization \
+    1.1. tokenizer: bert-base-uncased \
+    1.2. set a max_length -> 256? 512? \
+    1.3 store tokenized datasets 
+ 3. Probing pre-trained BERT: \
+    2.1. Probe each layer of pre-trained BERT for age / gender \
+        2.1.1. feed blogposts through the model and get hidden activations          per layers -> pool the hidden states to get one vector per input by         taking the [CLS] token \
+        2.1.2 we need 13 hidden activations per input (embeddings + 12              layers) \
+        2.1.3. save these activations \
+    2.2. probe each layer (train classifier) \
+        2.2.1. train logistic regression model to predict age or gender \
         2.2.2. 
     
  
