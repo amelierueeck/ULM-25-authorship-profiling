@@ -57,7 +57,7 @@ We will use the Blog Authorship Corpus, which was released by Bar-Ilan Universit
    5.3 write up results / comparison tables comparing models / confusion matrices
 
 
-**Checklist:**
+**Checklist:** \
  parse dataset → labels: gender, age_group \
  build author-level splits (no overlap) \
  tokenize once (common settings) \
@@ -65,4 +65,4 @@ We will use the Blog Authorship Corpus, which was released by Bar-Ilan Universit
  train probes (gender & age) → curves, CIs, confusions \
  train LoRA multitask (age+gender only) \
  extract LoRA features (same pipeline) \
- train probes again → overlay & Δ curves \
+ train probes again → overlay & Δ curves 
