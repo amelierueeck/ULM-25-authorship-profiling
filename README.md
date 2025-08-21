@@ -31,18 +31,38 @@ We will use the Blog Authorship Corpus, which was released by Bar-Ilan Universit
     1.3 store tokenized datasets 
  2. Probing pre-trained BERT: \
     2.1. Probe each layer of pre-trained BERT for age / gender \
-        2.1.1. feed blogposts through the model and get hidden activations          per layers -> pool the hidden states to get one vector per input by         taking the [CLS] token \
+        2.1.1. feed blogposts through the model and get hidden activationsper layers -> pool the hidden states to get one vector per input by taking the [CLS] token \
         2.1.2 we need 13 hidden activations per input (embeddings + 12              layers) \
         2.1.3. save these activations \
     2.2. probe each layer (train classifier) \
         2.2.1. train logistic regression model to predict age or gender \
         2.2.2. evaluate probe accuracy on test set -> how well does each layer perform? \
         2.2.3. plot accuracy vs. layer 
- 4. Fine-tune BERT with LoRA \
+ 3. Fine-tune BERT with LoRA \
     3.1 Load LoraConfig, get_peft_model, and PeftModel from the PEFT library \
     3.2 Initialize the PeftModel using bert-base-uncased as the foundation model \
     3.3 Use the transformers Trainer and TrainingArguments to initiate the training loop, using the train and val sets \
     3.4 Test the fine-tuned model on the test set.
- 
 
- 
+ 4. Probe LoRA-tuned BERT \
+    4.1 load base model + LoRA adapters + set to eval() mode \
+    4.2 get activations per layer for each blogpost \
+    4.3 save activations \
+    4.4 train logistic regression classifier per layer \
+    4.5 evaluate probe accuracy on test set -> how well does each layer perform? 
+
+5. evaluation \
+   5.1 compare: for each task & layer, compute ΔF1 = F1_LoRA − F1_Pretrained \
+   5.2 plot results + differences between the two models \
+   5.3 write up results / comparison tables comparing models / confusion matrices
+
+
+**Checklist:**
+ parse dataset → labels: gender, age_group \
+ build author-level splits (no overlap) \
+ tokenize once (common settings) \
+ extract pretrained features (all layers, CLS or mean pooling) \
+ train probes (gender & age) → curves, CIs, confusions \
+ train LoRA multitask (age+gender only) \
+ extract LoRA features (same pipeline) \
+ train probes again → overlay & Δ curves \
