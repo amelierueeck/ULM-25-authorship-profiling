@@ -1,0 +1,6 @@
+{"time":"2025-08-30T08:11:11.110478061Z","level":"INFO","msg":"stream: starting","core version":"0.21.2"}
+{"time":"2025-08-30T08:11:11.376482135Z","level":"INFO","msg":"stream: created new stream","id":"dgsmarpk"}
+{"time":"2025-08-30T08:11:11.376501591Z","level":"INFO","msg":"stream: started","id":"dgsmarpk"}
+{"time":"2025-08-30T08:11:11.376510354Z","level":"INFO","msg":"writer: started","stream_id":"dgsmarpk"}
+{"time":"2025-08-30T08:11:11.376514551Z","level":"INFO","msg":"sender: started","stream_id":"dgsmarpk"}
+{"time":"2025-08-30T08:11:11.376544127Z","level":"INFO","msg":"handler: started","stream_id":"dgsmarpk"}
