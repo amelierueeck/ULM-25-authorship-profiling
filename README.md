@@ -142,7 +142,7 @@ pip install -r requirements.txt
 
 ## 📚 References
 - Blog Authorship Corpus: [Hugging Face Dataset](https://huggingface.co/datasets/barilan/blog_authorship_corpus)
-- PAN Shared Tasks: [Digital Text Forensics and Stylometry](https://pan.webis.de/)
+- PAN Shared Tasks: [Digital Text Forensics and Stylometry]([https://pan.webis.de/](https://clef2025.clef-initiative.eu/index.php?page=Pages/Labs/PAN.html))
 
 ## 🤝 Contributing
 
