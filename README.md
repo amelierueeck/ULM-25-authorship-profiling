@@ -89,7 +89,7 @@ The choice was motivated by the **PAN shared tasks** on digital text forensics, 
 1. **Activation Re-extraction**: Get activations from LoRA-adapted model
 2. **Probe Retraining**: Train new probes on fine-tuned representations
 3. **Comparative Analysis**:
-   - Compute Δ accuracy = Accuracy_LoRA - Accuracy_Pretrained
+   - Compute accuracy
    - Visualize layer-wise changes in demographic encoding
 
 ## 📁 Repository Structure
