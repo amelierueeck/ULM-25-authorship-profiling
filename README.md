@@ -28,7 +28,7 @@ This project investigates the **mechanistic interpretability** of demographic in
 
 This research addresses two key gaps in the literature:
 
-1. **Interpretability Gap**: Limited understanding of how sociodemographic information is encoded in transformer models ([Lauscher et al., 2022](https://aclanthology.org/2022.findings-acl.184/))
+1. **Interpretability Gap**: Limited understanding of how sociodemographic information is encoded in transformer models (Lauscher et al., 2022)
 2. **Layer-wise Analysis**: Few studies examine how fine-tuning redistributes demographic features across model layers
 
 ### Research Hypotheses
