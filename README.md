@@ -141,8 +141,6 @@ pip install -r requirements.txt
 - Performance improvements and trade-offs
 
 ## 📚 References
-
-- Lauscher, A., et al. (2022). "What About the Precedent: An Information-Theoretic Analysis of Common Law." *Findings of ACL*.
 - Blog Authorship Corpus: [Hugging Face Dataset](https://huggingface.co/datasets/barilan/blog_authorship_corpus)
 - PAN Shared Tasks: [Digital Text Forensics and Stylometry](https://pan.webis.de/)
 
